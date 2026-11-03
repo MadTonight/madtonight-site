@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MadTonight: Where Madison's going</title>
+<meta name="description" content="One free email a day at 3 PM CT with the best things to do in Madison tonight, this week, and this month.">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55;color:#1b1b1f;background:#fffaf3}
+main,footer{max-width:40rem;margin:0 auto;padding:1.25rem}
+h1{font-size:1.9rem;line-height:1.2;margin:1.5rem 0 .75rem}h2{font-size:1.25rem;margin-top:2rem}
+.sub{font-size:1.1rem}.brand{font-weight:800;color:#c5050c;text-decoration:none;letter-spacing:.02em}
+ul{padding-left:1.2rem}li{margin:.5rem 0}
+form{background:#fff;border:2px solid #1b1b1f;border-radius:12px;padding:1rem;margin:1.5rem 0}
+label{display:block;font-weight:600;margin-bottom:.35rem}
+input[type=email]{width:100%;font-size:1rem;padding:.75rem;border:1px solid #888;border-radius:8px}
+button{width:100%;margin-top:.75rem;font-size:1.05rem;font-weight:700;padding:.8rem;border:0;border-radius:8px;background:#c5050c;color:#fff;cursor:pointer}
+button:focus,input:focus{outline:3px solid #f4b400;outline-offset:2px}
+.small{font-size:.875rem;color:#555}dt{font-weight:700;margin-top:1rem}dd{margin:0}
+footer{border-top:1px solid #ddd;font-size:.875rem;color:#555;padding-bottom:2rem}footer a,main a{color:#c5050c}
+@media(min-width:40rem){h1{font-size:2.5rem}button{width:auto;padding:.8rem 1.5rem}}
+</style>
+</head>
+<body>
+<main>
+  <a class="brand" href="/">MadTonight</a>
+  <h1>Where Madison's going: tonight, this week, this month.</h1>
+  <p class="sub">One free email a day with the best things to do in Madison: shows, comedy, games, free campus nights, and spots worth knowing. Read it in two minutes, then go.</p>
+
+  <form action="https://buttondown.com/api/emails/embed-subscribe/madtonight" method="post" target="popupwindow">
+    <label for="bd-email">Email</label>
+    <input type="email" name="email" id="bd-email" placeholder="your@email.com" autocomplete="email" required>
+    <input type="hidden" name="embed" value="1">
+    <input type="hidden" name="tag" value="landing">
+    <input type="hidden" name="metadata__utm_source" id="m_utm_source">
+    <input type="hidden" name="metadata__utm_medium" id="m_utm_medium">
+    <input type="hidden" name="metadata__utm_campaign" id="m_utm_campaign">
+    <input type="hidden" name="metadata__utm_content" id="m_utm_content">
+    <button type="submit">Get tonight's picks →</button>
+    <p class="small">Free. One email a day at 3 PM CT. Unsubscribe in one click.</p>
+    <p class="small">I only use your email to send MadTonight. I never sell or share it. <a href="/privacy/">Privacy policy</a></p>
+  </form>
+  <script>
+    // copy ?utm_* from the page URL into the hidden fields (no third-party scripts)
+    var p = new URLSearchParams(location.search);
+    ["utm_source","utm_medium","utm_campaign","utm_content"].forEach(function (k) {
+      var el = document.getElementById("m_" + k);
+      if (el) el.value = p.get(k) || (k === "utm_source" ? (document.referrer ? "referral" : "direct") : "");
+    });
+  </script>
+
+  <ul>
+    <li><strong>Tonight, sorted.</strong> 6–8 picks for tonight, each with time, place, price, and whether it's free, 18+, or fine without drinking.</li>
+    <li><strong>No more "wait, that was this weekend?"</strong> This Week and This Month give you a heads-up on concerts, Badger games, and fairs before they sell out.</li>
+    <li><strong>Easy to go solo or bring friends.</strong> Each pick has a quick "meet people" note, plus a Spot of the Night to start or end the evening.</li>
+  </ul>
+
+  <h2>FAQ</h2>
+  <dl>
+    <dt>Is it free?</dt><dd>Yes. Local sponsors help keep it free, and every sponsored pick is labeled.</dd>
+    <dt>How often?</dt><dd>Once a day, at 3 PM CT. You can unsubscribe anytime from the bottom of any email.</dd>
+    <dt>Who's it for?</dt><dd>Madison 18–30s: students, young professionals, and anyone new in town. Every pick lists its age rules (all ages / 18+ / 21+).</dd>
+    <dt>Do I have to drink?</dt><dd>No. I tag "No drinking needed" picks every day.</dd>
+    <dt>How do I get my event in?</dt><dd>Email <a href="mailto:hello@madtonight.com">hello@madtonight.com</a> with the link at least 3 days ahead.</dd>
+    <dt>Want to advertise?</dt><dd>Email <a href="mailto:hello@madtonight.com">hello@madtonight.com</a>.</dd>
+  </dl>
+</main>
+<footer>
+  <p>MadTonight · Madison, Wisconsin · MadTonight, PO Box 260086, Madison, WI 53726</p>
+  <p><a href="mailto:hello@madtonight.com">hello@madtonight.com</a> · <a href="/privacy/">Privacy policy</a></p>
+</footer>
+</body>
+</html>
